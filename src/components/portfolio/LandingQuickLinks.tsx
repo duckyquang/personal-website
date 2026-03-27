@@ -138,19 +138,19 @@ function MailContactCard({
   return (
     <>
       <div
-        className={`group relative flex w-full flex-col self-start text-left ${contactCardShell} lg:min-h-0 lg:h-full`}
+        className={`group relative flex h-[257px] w-full flex-col self-start text-left ${contactCardShell} lg:h-full`}
         aria-label={label}
       >
         <div className="flex h-full flex-col px-6 py-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 text-[12px] md:text-[12px] lg:text-[16px]">
             <span
-              className="relative inline-flex h-2 w-2 items-center justify-center md:h-2 md:w-2 lg:h-2 lg:w-2"
+              className="relative inline-flex h-[0.75em] w-[0.75em] items-center justify-center"
               aria-hidden
             >
-              <span className="absolute inline-flex h-2 w-2 rounded-full bg-[#72d34b] opacity-50 blur-[2px] md:h-2 md:w-2 lg:h-[1.8px] lg:w-[1.8px]" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#72d34b] md:h-1.5 md:w-1.5 lg:h-[1.4px] lg:w-[1.4px]" />
+              <span className="absolute inline-flex h-[0.66em] w-[0.66em] rounded-full bg-[#72d34b] opacity-50 blur-[2px]" />
+              <span className="relative inline-flex h-[0.5em] w-[0.5em] rounded-full bg-[#72d34b]" />
             </span>
-            <span className="text-[12px] font-semibold leading-none tracking-[-0.02em] text-[#070707] md:text-[12px] lg:text-[16px]">
+            <span className="text-[1em] font-semibold leading-none tracking-[-0.02em] text-[#070707]">
               Contact
             </span>
           </div>
