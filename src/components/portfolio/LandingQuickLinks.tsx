@@ -43,7 +43,7 @@ function LinkCard({
   return (
     <Link
       href={item.href}
-      className={`group relative flex min-h-[260px] w-full flex-col self-start ${cardShell} md:min-h-0 md:h-full`}
+      className={`group relative flex min-h-[260px] w-full flex-col self-start ${cardShell} lg:min-h-0 lg:h-full`}
     >
       {isIdeasCard ? (
         <div className="relative h-full w-full flex-1 bg-white">
@@ -129,7 +129,7 @@ function MailContactCard({
   return (
     <>
       <div
-        className={`group relative flex min-h-[360px] w-full flex-col self-start text-left ${contactCardShell} sm:min-h-[390px] md:min-h-0 md:h-full`}
+        className={`group relative flex min-h-[360px] w-full flex-col self-start text-left ${contactCardShell} sm:min-h-[390px] lg:min-h-0 lg:h-full`}
         aria-label={label}
       >
         <div className="flex h-full flex-col px-6 pt-[calc(theme(spacing.4)+6px)] pb-[calc(theme(spacing.4)-6px)]">
@@ -220,7 +220,7 @@ function MenuCard({
     <div
       className={`relative flex min-h-[260px] w-full flex-col self-start ${cardShell} ${
         open ? "" : ""
-      } md:min-h-0 md:h-full`}
+      } lg:min-h-0 lg:h-full`}
     >
       <button
         type="button"
@@ -282,17 +282,17 @@ export function LandingQuickLinks() {
     // Row 3: [3 (wide continues)] [4] [5]
     switch (index) {
       case 0:
-        return "md:col-start-1 md:row-start-1 md:col-span-1 md:row-span-1";
+        return "lg:col-start-1 lg:row-start-1 lg:col-span-1 lg:row-span-1";
       case 1:
-        return "md:col-start-2 md:row-start-1 md:col-span-2 md:row-span-1";
+        return "lg:col-start-2 lg:row-start-1 lg:col-span-2 lg:row-span-1";
       case 2:
-        return "md:col-start-4 md:row-start-1 md:col-span-1 md:row-span-2";
+        return "lg:col-start-4 lg:row-start-1 lg:col-span-1 lg:row-span-2";
       case 3:
-        return "md:col-start-1 md:row-start-2 md:col-span-2 md:row-span-2";
+        return "lg:col-start-1 lg:row-start-2 lg:col-span-2 lg:row-span-2";
       case 4:
-        return "md:col-start-3 md:row-start-2 md:col-span-1 md:row-span-2";
+        return "lg:col-start-3 lg:row-start-2 lg:col-span-1 lg:row-span-2";
       case 5:
-        return "md:col-start-4 md:row-start-3 md:col-span-1 md:row-span-1";
+        return "lg:col-start-4 lg:row-start-3 lg:col-span-1 lg:row-span-1";
       default:
         return "";
     }
@@ -300,13 +300,13 @@ export function LandingQuickLinks() {
 
   return (
     <nav
-      className="mt-10 grid grid-cols-1 items-start gap-4 sm:mt-14 md:mt-16 md:grid-cols-4 md:[--card-unit:clamp(90px,9.5vw,168px)] md:grid-rows-[var(--card-unit)_calc(var(--card-unit)*1.72)_var(--card-unit)] md:gap-6"
+      className="mt-10 grid grid-cols-1 items-start gap-4 sm:mt-14 md:mt-16 lg:grid-cols-4 lg:[--card-unit:clamp(90px,9.5vw,168px)] lg:grid-rows-[var(--card-unit)_calc(var(--card-unit)*1.72)_var(--card-unit)] lg:gap-6"
       aria-label="Site sections"
     >
       {landingQuickLinks.map((item, index) => {
         const placement = getCardPlacement(index);
         return (
-          <div key={item.label} className={`md:h-full ${placement}`}>
+          <div key={item.label} className={`lg:h-full ${placement}`}>
             {item.kind === "link" ? (
               <LinkCard item={item} imageSrc={getCardImage(index)} />
             ) : item.kind === "menu" ? (
