@@ -29,7 +29,6 @@ export const researchNav: NavItem[] = [
 
 export const workNav: NavItem[] = [
   { label: "Website", href: "/work/website" },
-  { label: "Project", href: "/work/project" },
   { label: "BuildNext", href: "/work/buildnext" },
   { label: "Jammy", href: "/work/jammy" },
 ];
