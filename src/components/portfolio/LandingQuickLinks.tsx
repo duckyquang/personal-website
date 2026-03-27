@@ -87,7 +87,7 @@ function MailContactCard({
   function MailIcon() {
     return (
       <svg
-        className="h-[10px] w-[10px] sm:h-[11px] sm:w-[11px] md:h-[12px] md:w-[12px] lg:h-[14px] lg:w-[14px]"
+        className="h-[clamp(8px,1vw,14px)] w-[clamp(8px,1vw,14px)]"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -103,7 +103,7 @@ function MailContactCard({
   function LinkedinIcon() {
     return (
       <svg
-        className="h-[11px] w-[11px] sm:h-[12px] sm:w-[12px] md:h-[13px] md:w-[13px] lg:h-[15px] lg:w-[15px]"
+        className="h-[clamp(9px,1.05vw,15px)] w-[clamp(9px,1.05vw,15px)]"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
@@ -122,7 +122,7 @@ function MailContactCard({
   function GithubIcon() {
     return (
       <svg
-        className="h-[11px] w-[11px] sm:h-[12px] sm:w-[12px] md:h-[13px] md:w-[13px] lg:h-[15px] lg:w-[15px]"
+        className="h-[clamp(9px,1.05vw,15px)] w-[clamp(9px,1.05vw,15px)]"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
@@ -133,7 +133,7 @@ function MailContactCard({
   }
 
   const rowClass =
-    "group flex w-full items-center justify-between rounded-xl px-2 py-1.5 text-left transition-colors duration-150 hover:bg-black/5";
+    "group flex w-full items-center justify-between rounded-xl px-1.5 py-0.5 text-left transition-colors duration-150 hover:bg-black/5";
 
   return (
     <>
@@ -144,24 +144,24 @@ function MailContactCard({
         <div className="flex h-full flex-col px-6 pt-[calc(theme(spacing.4)+6px)] pb-[calc(theme(spacing.4)-6px)]">
           <div className="flex items-center gap-3">
             <span
-              className="relative inline-flex h-3 w-3 items-center justify-center sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 lg:h-[18px] lg:w-[18px]"
+              className="relative inline-flex h-[clamp(8px,1vw,18px)] w-[clamp(8px,1vw,18px)] items-center justify-center"
               aria-hidden
             >
-              <span className="absolute inline-flex h-2.5 w-2.5 rounded-full bg-[#72d34b] opacity-50 blur-[2px] sm:h-3 sm:w-3 md:h-3.5 md:w-3.5 lg:h-4 lg:w-4" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#72d34b] sm:h-2.5 sm:w-2.5 md:h-3 md:w-3 lg:h-3.5 lg:w-3.5" />
+              <span className="absolute inline-flex h-[clamp(7px,0.9vw,16px)] w-[clamp(7px,0.9vw,16px)] rounded-full bg-[#72d34b] opacity-50 blur-[2px]" />
+              <span className="relative inline-flex h-[clamp(6px,0.75vw,14px)] w-[clamp(6px,0.75vw,14px)] rounded-full bg-[#72d34b]" />
             </span>
-            <span className="text-[16px] font-semibold leading-none tracking-[-0.02em] text-[#070707] sm:text-[17px] md:text-[18px] lg:text-[21px]">
+            <span className="text-[clamp(13px,1.35vw,21px)] font-semibold leading-none tracking-[-0.02em] text-[#070707]">
               Contact
             </span>
           </div>
 
-          <div className="mt-4 space-y-0">
+          <div className="mt-2 space-y-0">
             <button
               type="button"
               className={`${rowClass} cursor-pointer`}
               onClick={() => setOpen(true)}
             >
-              <span className="text-[13px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] sm:text-[14px] md:text-[15px] lg:text-[17px]">
+              <span className="text-[clamp(10px,1.1vw,17px)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 Email
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -175,7 +175,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[13px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] sm:text-[14px] md:text-[15px] lg:text-[17px]">
+              <span className="text-[clamp(10px,1.1vw,17px)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 LinkedIn
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -189,7 +189,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[13px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] sm:text-[14px] md:text-[15px] lg:text-[17px]">
+              <span className="text-[clamp(10px,1.1vw,17px)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 GitHub
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
