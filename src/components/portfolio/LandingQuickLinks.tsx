@@ -141,7 +141,7 @@ function MailContactCard({
         className={`group relative flex w-full flex-col self-start text-left ${contactCardShell} lg:min-h-0 lg:h-full`}
         aria-label={label}
       >
-        <div className="flex h-full flex-col px-6 pt-[calc(theme(spacing.4)+6px)] pb-[calc(theme(spacing.4)-6px)]">
+        <div className="flex h-full flex-col px-6 py-4">
           <div className="flex items-center gap-3">
             <span
               className="relative inline-flex h-3.5 w-3.5 items-center justify-center md:h-4 md:w-4 lg:h-3 lg:w-3"
