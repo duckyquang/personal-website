@@ -87,7 +87,7 @@ function MailContactCard({
   function MailIcon() {
     return (
       <svg
-        className="h-[calc(var(--contact-scale)*0.62)] w-[calc(var(--contact-scale)*0.62)]"
+        className="h-[calc(var(--contact-scale)*0.85)] w-[calc(var(--contact-scale)*0.85)]"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -103,7 +103,7 @@ function MailContactCard({
   function LinkedinIcon() {
     return (
       <svg
-        className="h-[calc(var(--contact-scale)*0.68)] w-[calc(var(--contact-scale)*0.68)]"
+        className="h-[calc(var(--contact-scale)*0.93)] w-[calc(var(--contact-scale)*0.93)]"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
@@ -122,7 +122,7 @@ function MailContactCard({
   function GithubIcon() {
     return (
       <svg
-        className="h-[calc(var(--contact-scale)*0.68)] w-[calc(var(--contact-scale)*0.68)]"
+        className="h-[calc(var(--contact-scale)*0.93)] w-[calc(var(--contact-scale)*0.93)]"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
@@ -142,7 +142,7 @@ function MailContactCard({
         aria-label={label}
       >
         <div className="flex h-full flex-col px-6 py-4 [--contact-scale:clamp(12px,3.2cqw,20px)]">
-          <div className="flex items-center gap-3 text-[calc(var(--contact-scale)*1.1)]">
+          <div className="flex items-center gap-3 text-[calc(var(--contact-scale)*1.51)]">
             <span
               className="relative inline-flex h-[0.75em] w-[0.75em] items-center justify-center"
               aria-hidden
@@ -161,7 +161,7 @@ function MailContactCard({
               className={`${rowClass} cursor-pointer`}
               onClick={() => setOpen(true)}
             >
-              <span className="text-[calc(var(--contact-scale)*0.82)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
+              <span className="text-[calc(var(--contact-scale)*1.12)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 Email
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -175,7 +175,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[calc(var(--contact-scale)*0.82)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
+              <span className="text-[calc(var(--contact-scale)*1.12)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 LinkedIn
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -189,7 +189,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[calc(var(--contact-scale)*0.82)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
+              <span className="text-[calc(var(--contact-scale)*1.12)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 GitHub
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
