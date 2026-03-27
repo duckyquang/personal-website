@@ -150,7 +150,7 @@ function MailContactCard({
               <span className="absolute inline-flex h-[clamp(7px,0.9vw,16px)] w-[clamp(7px,0.9vw,16px)] rounded-full bg-[#72d34b] opacity-50 blur-[2px]" />
               <span className="relative inline-flex h-[clamp(6px,0.75vw,14px)] w-[clamp(6px,0.75vw,14px)] rounded-full bg-[#72d34b]" />
             </span>
-            <span className="text-[clamp(13px,1.35vw,21px)] font-semibold leading-none tracking-[-0.02em] text-[#070707]">
+            <span className="text-[18px] font-semibold leading-none tracking-[-0.02em] text-[#070707] sm:text-[20px] md:text-[22px] lg:text-[21px]">
               Contact
             </span>
           </div>
@@ -161,7 +161,7 @@ function MailContactCard({
               className={`${rowClass} cursor-pointer`}
               onClick={() => setOpen(true)}
             >
-              <span className="text-[clamp(10px,1.1vw,17px)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
+              <span className="text-[16px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] sm:text-[17px] md:text-[18px] lg:text-[17px]">
                 Email
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -175,7 +175,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[clamp(10px,1.1vw,17px)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
+              <span className="text-[16px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] sm:text-[17px] md:text-[18px] lg:text-[17px]">
                 LinkedIn
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -189,7 +189,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[clamp(10px,1.1vw,17px)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
+              <span className="text-[16px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] sm:text-[17px] md:text-[18px] lg:text-[17px]">
                 GitHub
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
