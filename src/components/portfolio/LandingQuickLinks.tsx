@@ -87,7 +87,7 @@ function MailContactCard({
   function MailIcon() {
     return (
       <svg
-        className="h-[7px] w-[7px] md:h-[8px] md:w-[8px] lg:h-[11px] lg:w-[11px]"
+        className="h-[calc(var(--contact-scale)*0.62)] w-[calc(var(--contact-scale)*0.62)]"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -103,7 +103,7 @@ function MailContactCard({
   function LinkedinIcon() {
     return (
       <svg
-        className="h-[8px] w-[8px] md:h-[8px] md:w-[8px] lg:h-[12px] lg:w-[12px]"
+        className="h-[calc(var(--contact-scale)*0.68)] w-[calc(var(--contact-scale)*0.68)]"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
@@ -122,7 +122,7 @@ function MailContactCard({
   function GithubIcon() {
     return (
       <svg
-        className="h-[8px] w-[8px] md:h-[8px] md:w-[8px] lg:h-[12px] lg:w-[12px]"
+        className="h-[calc(var(--contact-scale)*0.68)] w-[calc(var(--contact-scale)*0.68)]"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden
@@ -138,11 +138,11 @@ function MailContactCard({
   return (
     <>
       <div
-        className={`group relative flex h-[257px] w-full flex-col self-start text-left ${contactCardShell} lg:h-full`}
+        className={`@container group relative flex h-[257px] w-full flex-col self-start text-left ${contactCardShell} lg:h-full`}
         aria-label={label}
       >
-        <div className="flex h-full flex-col px-6 py-4">
-          <div className="flex items-center gap-3 text-[14px] md:text-[14px] lg:text-[19px]">
+        <div className="flex h-full flex-col px-6 py-4 [--contact-scale:clamp(12px,3.2cqw,20px)]">
+          <div className="flex items-center gap-3 text-[calc(var(--contact-scale)*1.1)]">
             <span
               className="relative inline-flex h-[0.75em] w-[0.75em] items-center justify-center"
               aria-hidden
@@ -161,7 +161,7 @@ function MailContactCard({
               className={`${rowClass} cursor-pointer`}
               onClick={() => setOpen(true)}
             >
-              <span className="text-[11px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] md:text-[12px] lg:text-[16px]">
+              <span className="text-[calc(var(--contact-scale)*0.82)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 Email
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -175,7 +175,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[11px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] md:text-[12px] lg:text-[16px]">
+              <span className="text-[calc(var(--contact-scale)*0.82)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 LinkedIn
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
@@ -189,7 +189,7 @@ function MailContactCard({
               rel="noopener noreferrer"
               className={rowClass}
             >
-              <span className="text-[11px] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222] md:text-[12px] lg:text-[16px]">
+              <span className="text-[calc(var(--contact-scale)*0.82)] leading-none tracking-[-0.02em] text-[#070707] transition-colors duration-150 group-hover:text-[#222222]">
                 GitHub
               </span>
               <span className="text-[#101010] transition-transform duration-150 group-hover:translate-x-0.5">
