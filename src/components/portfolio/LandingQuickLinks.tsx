@@ -138,7 +138,7 @@ function MailContactCard({
   return (
     <>
       <div
-        className={`group relative flex min-h-[360px] w-full flex-col self-start text-left ${contactCardShell} sm:min-h-[390px] lg:min-h-0 lg:h-full`}
+        className={`group relative flex min-h-[260px] w-full flex-col self-start text-left ${contactCardShell} lg:min-h-0 lg:h-full`}
         aria-label={label}
       >
         <div className="flex h-full flex-col px-6 pt-[calc(theme(spacing.4)+6px)] pb-[calc(theme(spacing.4)-6px)]">
